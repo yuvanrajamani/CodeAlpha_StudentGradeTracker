@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
-/** Represents a student and the grades they have received. */
 public class Student {
     private final String name;
     private final List<Double> grades = new ArrayList<>();
@@ -44,8 +42,6 @@ public class Student {
         for (double g : grades) min = Math.min(min, g);
         return grades.isEmpty() ? 0 : min;
     }
-
-    /** Converts the student's average into a letter grade. */
     public String getLetterGrade() {
         double avg = getAverage();
         if (avg >= 90) return "A";
