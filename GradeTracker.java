@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-/** Console-based Student Grade Tracker. */
 public class GradeTracker {
     private static final List<Student> students = new ArrayList<>();
     private static final Scanner scanner = new Scanner(System.in);
